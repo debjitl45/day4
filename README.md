@@ -1,4 +1,4 @@
-Q1. What is the Spring Boot?
+Q1. What is the Spring Boot?<br>
 Spring Boot is an opinionated framework for building and running Spring applications. Spring Boot is not a framework for writing applications, think of Spring Boot as a tool which can do these initial tasks for us automatically.
 
 While working on big enterprise projects involving several frameworks, it is complex to handle all configurations and making sure required dependencies are in place. Spring Boot focuses on developer productivity by providing smart auto configuration modules and handling all configurations and dependencies for us.
@@ -7,7 +7,7 @@ Read What is Spring Boot for more detail.
 
  
 
-Q2. What are the advantages of Spring Boot?
+Q2. What are the advantages of Spring Boot?<br>
 It simplifies Spring dependencies by taking the opinionated view.
 Spring Boot provides a pre-configured set of technologies/framework to reduces error-prone configuration so we as a developer focused on building our business logic and not thinking of project setup.
 It reduces development code by avoiding a lot of boilerplate code.
@@ -17,7 +17,7 @@ Embed Tomcat, Jetty or Undertow directly.
 Provide opinionated Maven POM to simplify your configuration.
  
 
-Q3. What are the different Spring Boot Components?
+Q3. What are the different Spring Boot Components?<br>
 Boot Initializer
 Spring Boot Starter
 Auto Configurator.
@@ -26,7 +26,7 @@ Actuator.
 Spring Boot Modules
  
 
-Q4. What is Spring Boot Starters?
+Q4. What is Spring Boot Starters?<br>
 Spring Boot Starters are the set of convenient dependency descriptors which can be easily included in any level of application. These starters work as a bootstrapping process for the Spring related technologies, we no longer need to worry about the dependencies and they will be automatically managed by Spring Boot Starters.
 
 The starters contain a lot of the dependencies you need to get a project up and running quickly and with a consistent, supported a set of managed transitive dependencies. To summarize, Spring Boot Starters are just JAR files used by Spring Boot for auto-dependency.
@@ -35,7 +35,7 @@ The starters contain a lot of the dependencies you need to get a project up and 
 
  
 
-Q5. Name some starter provided by Spring Boot?
+Q5. Name some starter provided by Spring Boot?<br>
 spring-boot-starter-web: Web and RESTful applications
 spring-boot-starter-security : Spring Security
 spring-boot-starter-data-jpa – Spring Data JPA
@@ -46,19 +46,19 @@ For a complete list, read Spring Boot Starters List
 
  
 
-Q6. What is Auto-Configuration in Spring Boot?
+Q6. What is Auto-Configuration in Spring Boot?<br>
 It takes a lot of configurations and boilerplate code create a simple Spring MVC application without Spring Boot. Spring Boot Auto Configuration provides an opinionated approach to bootstrap your application. Auto-Configuration will attempt to automatically try to set up our application with default behavior based on the jars in the classpath. For example, if Spring Boot finds HSQLDB in out classpath, it will automatically configure an in-memory database for us. Think of the auto-configuration as an intelligent system which can provide ready to use the application to us based on the configured jars in our classpath.
 
 For detail information please read our article Spring Boot Auto Configuration
 
  
 
-Q7. Can we use Spring Boot for non-Spring application?
+Q7. Can we use Spring Boot for non-Spring application?<br>
 No, Spring Boot has limited to Spring based application only. We can not use Spring Boot for non Spring applications.
 
  
 
-Q8. What are the different options for creating the Spring Boot application
+Q8. What are the different options for creating the Spring Boot application?<br>
 There are multiple options to create a Spring Boot application. We can use any of the following approaches
 
 Spring Initializer
@@ -69,12 +69,12 @@ Read Building an Application with Spring Boot for detail.
 
  
 
-Q9. What is the Spring Boot Initilizr?
+Q9. What is the Spring Boot Initilizr?<br>
 Spring Boot Initilizr is a Spring Boot tool to bootstrap Spring Boot or Spring Applications easily. Spring Initializr is also integrated with all major Java IDEs along with CLI.
 
  
 
-Q10. What are the advantages of Spring Boot Initializr?
+Q10. What are the advantages of Spring Boot Initializr?<br>
 Spring Boot Initializr provides a simple interface to quickly bootstrap a Spring Boot application. Here are benefits or advantages of using Initilizr.
 
 Spring Initializr provides an extensible API to generate quick start projects.
@@ -85,7 +85,7 @@ For more detail, read Spring Initializr Reference Guide
 
  
 
-Q11. How can I reload my Spring Boot changes without restarting the server?
+Q11. How can I reload my Spring Boot changes without restarting the server?<br>
 This is achievable by Spring Boot Dev Tools module.it’s a powerful tool for development. It helps developers to shorten the development cycle and enable easy deployment and testing during development.
 
 To enable this feature, add the following dependency to Maven POM file.
@@ -101,7 +101,7 @@ Read Spring Boot Dev Tools for different features of Dev Tools.
 
  
 
-Q12. How can we override default properties in Spring Boot?
+Q12. How can we override default properties in Spring Boot?<br>
 Spring Boot advocate convention over configuration. Spring Boot externalize application configurations through application.properties file. These properties work as default values for the Spring Boot application.
 
 To override these default values, Spring Boot provides the following options.
@@ -117,7 +117,7 @@ server.port=9090
 Copy
  
 
-Q13. What are the embedded containers supported by Spring Boot?
+Q13. What are the embedded containers supported by Spring Boot?<br>
 Spring Boot includes support for the following embedded containers
 
 Tomcat
@@ -127,12 +127,12 @@ Use the right “Starter” to configure the embedded container.
 
  
 
-Q14. What is the Spring Boot Actuator?
+Q14. What is the Spring Boot Actuator?<br>
 The actuator provides production-ready features for Spring Boot application. It will help us check and manage our application in the production environment. We need none code to get these features since they are available once the actuator dependency is in the class-path. The actuator provides features like auditing, health, metrics, environment information, thread dump etc. using HTTP endpoints. Read Spring Boot Actuator for more detail.
 
  
 
-Q15. How can we create a custom endpoint in Spring Boot Actuator?
+Q15. How can we create a custom endpoint in Spring Boot Actuator?<br>
 To create a custom endpoint using Spring Boot 1.x, we should expose the instance of the custom endpoint class as a bean. We need to implement Endpoint<T> interface.
 
 @Component
@@ -144,7 +144,7 @@ Spring Boot 2.x changed it by introducing @Endpoint annotation. Spring Boot expo
 
  
 
-Q16. How to run Spring Boot application to custom port?
+Q16. How to run Spring Boot application to custom port?<br>
 Use the application.properties file to configure a custom port for Spring Boot application. To change the server port, use server.port property.
 
 server.port=9001
@@ -153,7 +153,7 @@ Read Spring Boot Web Application Configuration for more detail.
 
  
 
-Q17. What logging support provided by Spring Boot? How can we control logging level in Spring Boot?
+Q17. What logging support provided by Spring Boot? How can we control logging level in Spring Boot?<br>
 Spring Boot provides options to use all popular logging API using the relevant starter, by default Spring Boot use Commons Logging for its internal logging. If we are using Spring Boot Starters for our application, Logback will be used for logging by default unless we want to use any other logging API. To use any other logging API, we need to add the correct starter in our application. In case we like to use Log4j2 for logging configuration, all you have to add the log4j2 starter in your application (You may have to exclude logback using  pom.xml file).
 
 Spring Boot provides an easy way to configure and set logging levels for your application. We can use application.properties file to configure the desired Logging level for our application by using ‘logging.level.*=LEVEL’. Here is an example for the same
@@ -164,7 +164,7 @@ Read Spring Boot Logging for more detail.
 
  
 
-Q18. How to implement security for Spring boot application?
+Q18. How to implement security for Spring boot application?<br>
 Use the spring-boot-starter-security starter to enable the Spring security support in your Spring Boot application.
 
 <dependency>
@@ -174,7 +174,7 @@ Use the spring-boot-starter-security starter to enable the Spring security suppo
 Copy
  
 
-Q19. How to configure database using Spring Boot?
+Q19. How to configure database using Spring Boot?<br>
 The Spring Framework provides extensive support for working with SQL databases, from direct JDBC access using JdbcTemplate to complete “object-relational mapping” technologies such as Hibernate. To connect configure the database for your Spring Boot application, use the spring-boot-starter-jdbc or spring-boot-starter-data-jpa “starters”.To configure datasource configuration, use the application.properties file in your application.
 
 spring.datasource.url=jdbc:mysql://localhost/javadevjournal
@@ -186,7 +186,7 @@ Above example is to configure MySQL in your application. For more information, r
 
  
 
-Q20. How can we use Jetty instead of the tomcat in our web application?
+Q20. How can we use Jetty instead of the tomcat in our web application?<br>
 Spring Boot web starters use Tomcat as the default embedded servlet container. When switching to a different HTTP server, we need to exclude the default dependencies besides including the one we need. Spring Boot provides separate starters for HTTP servers to help make this process as easy as possible. To use Jetty, we need to exclude Tomcat and include Jetty in our application’s pom.xml file.
 
 <dependency>
@@ -208,7 +208,7 @@ Spring Boot web starters use Tomcat as the default embedded servlet container. W
 Copy
  
 
-Q21. Why do we need spring-boot-maven-plugin?
+Q21. Why do we need spring-boot-maven-plugin?<br>
 Spring Boot Maven plugin provides Spring Boot support in the maven. This plugin provides options to create an executable jar or war files. Here are goals for this plugin.
 
 boot: run runs your Spring Boot application.
@@ -234,7 +234,7 @@ To include this plugin in your project, add XML in the plugins section of your p
 Copy
  
 
-Q22. How to disable specific auto-configuration in spring boot?
+Q22. How to disable specific auto-configuration in spring boot?<br>
 To exclude specific auto-configuration classes, use the exclude attribute of @EnableAutoConfiguration to disable them. Here is a sample code for the same.
 
 @Configuration
@@ -244,7 +244,7 @@ public class CustomConfiguration {
 Copy
  
 
-Q23. What is the use of YAML in Spring Boot?
+Q23. What is the use of YAML in Spring Boot?<br>
 YAML is a superset of JSON.Spring Boot YAML as an alternative to the application.properties file to define your project properties. The SpringApplication class automatically supports YAML as an alternative to properties whenever you have the SnakeYAML library on your classpath.
 
 Let’s take the following example of the application.properties file.
@@ -261,7 +261,7 @@ environments:
 Copy
  
 
-Q24. What is new in Spring Boot 2.0?
+Q24. What is new in Spring Boot 2.0?<br>
 Spring Boot 2.0 brings several features changes to the Spring Boot framework.
 
 Spring Boot 2.0 is a baseline to Java 8. Therefore, Spring Boot 2.0 requires Java 8 or later. It doesn’t support Java 6 and Java 7 anymore.
@@ -278,7 +278,7 @@ For more details, please read.
 
  
 
-Q25. What is @SpringBootApplication annotation?
+Q25. What is @SpringBootApplication annotation?<br>
 This is one of the most important and core annotation from Spring Boot. We use this annotation to mark the main class of our Spring Boot application.
 
 @SpringBootApplication
@@ -296,7 +296,7 @@ For more detail, please read Spring Boot Annotations.
 
  
 
-Q26. How to include custom static content in Spring Boot application (e.g custom JS code)?
+Q26. How to include custom static content in Spring Boot application (e.g custom JS code)?<br>
 Spring Boot search specific location in the project for serving static contents. By default, Spring Boot serves static content from a directory called /static (or /public or /resources or /META-INF/resources) in the classpath or from the root of the ServletContext.
 
 We can put our custom static content in any of the above folders. For example, put the custom.js file under /resources/static/custom.js. To refer to this file in the view use the following code
@@ -305,7 +305,7 @@ We can put our custom static content in any of the above folders. For example, p
 Copy
  
 
-Q27. How to use a profile with Spring Boot?
+Q27. How to use a profile with Spring Boot?<br>
 Spring Boot provides multiple ways to active profile. We can pass profile information through the command line or use application.properties, Spring Boot also provide a way to set profile programmatically.
 
 Use profile specific configuration files in our Spring Boot application.we need to the naming convention of application-{profile}.properties where profile defines the name of the intended profile. Profile specific files will be loaded from the same location as application.properties file.
@@ -314,7 +314,7 @@ Read Introduction to Spring Profiles Using Spring Boot for more detail.
 
  
 
-Q29. How to set the active profile in Spring Boot?
+Q29. How to set the active profile in Spring Boot?<br>
 There are two ways to set the active profile in Spring Boot.
 
 Pass in the active profile as an argument while launching the application.
@@ -324,7 +324,7 @@ spring.profiles.active=production
 Copy
  
 
-Q29. How to generate a WAR file with Spring Boot?
+Q29. How to generate a WAR file with Spring Boot?<br>
 We can control the package type generation in our Spring Boot project usingspring-boot-maven-plugin To build a war file, we need to follow these 2 steps.
 
 Set the packaging type as a war in our pom.xml file.
@@ -352,14 +352,14 @@ Here is a snapshot from pom.xml
 Copy
  
 
-Q30. How to disable the web server configuration in your Spring Boot application?
+Q30. How to disable the web server configuration in your Spring Boot application?<br>
 Spring Boot automatically starts an application in web server mode if it finds the web module in the classpath. To disable the web server configuration, set the webApplicationType to none in the application.properties file.
 
 spring.main.web-application-type=none
 Copy
  
 
-Q31. How to configure and enable SSL for your Spring Boot application?
+Q31. How to configure and enable SSL for your Spring Boot application?<br>
 Use the server.ssl.* properties in the application.properties or yml file to configure and enable SSL for your Spring Boot application. Here are typical SSL configurations for your application.
 
 server.port=8443 //SSL port
@@ -371,12 +371,12 @@ Remember, Spring Boot does not support configuration of both HTTP and HTTPS thro
 
  
 
-Q32. Can we create a Non-web application in Spring Boot?
+Q32. Can we create a Non-web application in Spring Boot?<br>
 Yes, Spring Boot support creating both web and non-web applications. To create a non-web application, you need to remove web dependencies from your classpath along with changing the way Spring Boot create the application context. Please read Standalone Application Using Spring Boot for more details.
 
  
 
-Q33. How the ApplicationContext created by Spring Boot?
+Q33. How the ApplicationContext created by Spring Boot?<br>
 Spring Boot creates the ApplicationContext once we execute the SpringApplication.run() command.Spring Boot returns the ConfigurableApplicationContext which extends ApplicationContext. This is how Spring Boot creates and return the context.
 
 public ConfigurableApplicationContext run(String...args) {
@@ -415,7 +415,7 @@ For more information, refer to the SpringApplication
 
  
 
-Q34. How can we externalize SpringApplication configuration?
+Q34. How can we externalize SpringApplication configuration?<br>
 The SpringApplication class provides setters method to configure and customize its behavior. For example, to switch off the banner (displaying on startup), we can use the .bannelMode(boolean) method.
 
 new SpringApplicationBuilder()
@@ -430,7 +430,7 @@ Properties defined in the external configuration override the values specified w
 
  
 
-Q35. How to enable HTTP Response Compression in Spring Boot?
+Q35. How to enable HTTP Response Compression in Spring Boot?<br>
 Spring Boot supports the HTTP response compression for the following application servers:
 
 Tomcat
@@ -455,19 +455,19 @@ use the server.compression.mime-types property to customize this list.
 
  
 
-Q36. What is Spring Boot Admin?
+Q36. What is Spring Boot Admin?<br>
 Spring Boot admin is a community project used to manage and monitor your Spring Boot applications. The client application gets register themselves with the admin server (via HTTP) or is discovered using Spring Cloud discover server like Eureka, Consul.Each client application needs to have Spring Actuator jars in it. The endpoints provided by the Actuator jar is polled by the Spring Boot Admin server to get the metrics of that application.
 
 Actuators endpoints let you monitor and interact with your application. Spring Boot includes several built-in endpoints and lets you add your own. To know more details about these endpoints read Spring Boot Actuator.
 
  
 
-Q37. Can we configure Spring Boot to use multiple data sources?
+Q37. Can we configure Spring Boot to use multiple data sources?<br>
 No, Spring Boot does not provide an out of the box solution in case our application needs multiple DataSources (e.g. multi-tenant system). Spring Boot provides multiple extension point to enable support for multiple data sources. Read multiple data sources with Spring Boot for more detail.
 
  
 
-Q38. What is application.properties file in Spring Boot?
+Q38. What is application.properties file in Spring Boot?<br>
  This property file is the central control system for your Spring Boot application. Spring Boot applies its typical convention over configuration approach to property files. Spring Boot provides default application.properties file for the default configurations. When Spring Boot application starters, it refer to this configuration file for the default values.
 
 Spring boot specified various common default properties inside application.properties to support Logging, AOP, Server configurations, caching, JPA, etc. We need not specify all the default properties in all the cases. We can specify them only on-demand.
@@ -476,16 +476,16 @@ For the complete list, please refer to the Common application properties
 
  
 
-Q39. How to enable HTTP/2 support in Spring Boot?
+Q39. How to enable HTTP/2 support in Spring Boot?<br>
 We can enable HTTP/2 support by using server.http2.enabled configuration property. Please refer to the application server documentation as HTTP/2 is not supported by all web servers.
  
 
-Q40. What is the use of starter POM in our Spring Boot application?
+Q40. What is the use of starter POM in our Spring Boot application?<br>
 Spring Boot starter parent is a convenient and easy way for dependency management. With each release, Spring Boot provides a curated list of it supports. While working on the Spring Boot application, you may not need to provide the version number for the dependencies as these are automatically taken care by Spring Boot. Spring Boot manage these curated list of dependencies through the starter pom.
 
  
 
-Q41. How to access a value defined in the application.properties file in Spring Boot?
+Q41. How to access a value defined in the application.properties file in Spring Boot?<br>
 Use the @Value annotation to access the properties defined in the application. properties file.
 
 @Value("${custom.value}")
